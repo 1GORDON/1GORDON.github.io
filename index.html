@@ -1,195 +1,643 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Gordon Tinyefuza</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/bc4d064067.js" crossorigin="anonymous"></script>
+  <title>Gordon Tinyefuza</title>
+</head>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Gordon Tinyefuza<br />
-						Portfolio</h1>
-						<p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+<body>
+  <div id="modal" class="modal hide">
+    <i id="close-ico" class="close-ico far fa-times-circle"></i>
+    <div class="item-top">
+      <h2 id="modal-title" data-item="true" class="item-title">Item title</h2>
+      <ul id="modal-subtitle" data-item="true" class="item-subtitle">
+        <li data-item="true">Company</li>
+        <li data-item="true">Stack info</li>
+        <li data-item="true">Year</li>
+      </ul>
+    </div>
+    <figure data-item="true" class="item-img">
+      <img id="modal-img" data-item="true"
+        src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
+    </figure>
+    <div data-item="true" class="item-desc">
+      <p id="modal-desc" data-item="true" class="item-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
+        doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
+        obcaecati incidunt?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
+        doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
+        obcaecati incidunt?
+      </p>
+      <div class="item-side">
+        <h3 class="blue tags-title">Stack:</h3>
+        <ul id="modal-stack" data-item="true" class="item-tags">
+          <li data-item="true" class="tag">html</li>
+          <li data-item="true" class="tag">javascript</li>
+          <li data-item="true" class="tag">css</li>
+        </ul>
+        <hr />
+        <div class="item-links">
+          <a id="modal-live" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+            href="https://uryelah.github.io/ao-kanji/">
+            <span>See live</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+          <a id="modal-repo" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+            href="https://uryelah.github.io/ao-kanji/">
+            <span>See source</span>
+            <i class="fab fa-github"></i>
+          </a>
+          <button id="back" type="button" class="item-btn">
+            <span>Go Back</span>
+            <i class="fas fa-chevron-circle-left"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="click-catcher" class="hide click-catcher"></div>
+  <nav id="nav--mobile" class="hide nav--mobile">
+    <ul class="nav-links">
+      <li id="nav-close" class="nav-link nav-close">
+        <i class="fas fa-times"></i>
+      </li>
+      <li class="nav-link">
+        <a class="mobile-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-link">
+        <a class="mobile-link" href="#about">About</a>
+      </li>
+      <li class="nav-link">
+        <a class="mobile-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="main" class="main">
+    <nav class="nav" id="nav">
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a class="nav-logo" href="#">Gordon</a>
+        </li>
+        <li class="list-padding">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Full-stack Web Developer</a>
-					</header>
+        </li>
+        <li id="nav-expand" class="nav-link nav-expand">
+          <i class="fas fa-bars"></i>
+        </li>
+        <li class="nav-link">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-link">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="section section--round-bl">
+      <div class="bg-animated">
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="element-1">
+          <svg class="straight" width="90" height="93" viewBox="0 0 90 93" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.601562" y="78.9232" width="108.669" height="19.4403"
+              transform="rotate(-46.1415 0.601562 78.9232)" fill="#EBEBFF" />
+          </svg>
+          <svg class="round" width="90" height="69" viewBox="0 0 90 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.9842 0.0740829C11.7936 9.88918 11.6736 20.967 15.6508 30.8705C19.6279 40.774 27.3763 48.692 37.1914 52.8826C47.0065 57.0732 58.0843 57.1931 67.9878 53.216C77.8913 49.2389 85.8093 41.4905 89.9999 31.6754L15.9842 0.0740829Z"
+              fill="#6070FF" />
+          </svg>
+        </div>
+        <div class="element-2">
+          <svg class="straight" width="201" height="143" viewBox="0 0 201 143" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect y="102" width="204" height="47" transform="rotate(-30 0 102)" fill="#EBEBFF" />
+          </svg>
+          <svg class="round" width="210" height="213" viewBox="0 0 210 213" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M209.581 57.0278C200.949 41.7052 188.83 28.6308 174.205 18.863C159.581 9.09529 142.861 2.90884 125.401 0.804592C107.94 -1.29966 90.2299 0.737445 73.7033 6.75095C57.1767 12.7645 42.2984 22.5853 30.2733 35.4184C18.2481 48.2515 9.41404 63.736 4.48635 80.6183C-0.441345 97.5005 -1.32415 115.306 1.90941 132.593C5.14297 149.88 12.402 166.162 23.0988 180.122C33.7955 194.081 47.6293 205.326 63.4801 212.945L84.3582 169.508C75.3281 165.168 67.447 158.762 61.3531 150.809C55.2591 142.856 51.1237 133.58 49.2815 123.732C47.4394 113.883 47.9423 103.74 50.7496 94.1219C53.5569 84.5041 58.5896 75.6825 65.4404 68.3716C72.2911 61.0606 80.7672 55.4656 90.1824 52.0397C99.5976 48.6138 109.687 47.4533 119.634 48.6521C129.582 49.8509 139.107 53.3753 147.438 58.94C155.77 64.5046 162.674 71.9532 167.592 80.6824L209.581 57.0278Z"
+              fill="#6070FF" />
+          </svg>
+        </div>
+        <div class="element-3">
+          <svg class="straight" width="57" height="23" viewBox="0 0 57 23" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="56.0124" height="10.0203"
+              transform="matrix(0.977401 -0.211395 -0.211395 -0.977401 2.25342 22.5715)" fill="#6070FF" />
+          </svg>
+          <svg class="round" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11.5" cy="11.5" r="11.5" fill="#EBEBFF" />
+          </svg>
+        </div>
+        <div class="element-4">
+          <svg class="straight" width="160" height="91" viewBox="0 0 160 91" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="11.4399" width="161.407" height="28.875" transform="rotate(23.34 11.4399 0)" fill="#EBEBFF" />
+          </svg>
+          <svg class="round" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="23.5" cy="23.5" r="23.5" fill="#6070FF" />
+          </svg>
+        </div>
+        <div class="element-5">
+          <svg class="straight" width="57" height="57" viewBox="0 0 57 57" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M45.2341 44.7825C47.5564 42.0166 49.1946 38.7426 50.0163 35.2258C50.8379 31.7089 50.8197 28.048 49.9633 24.5395C49.1069 21.0309 47.4363 17.7734 45.0868 15.0305C42.7373 12.2877 39.7748 10.1368 36.4394 8.7518C33.1039 7.36684 29.4892 6.78681 25.8879 7.05868C22.2866 7.33055 18.7999 8.44668 15.7102 10.3167C12.6205 12.1867 10.0146 14.7581 8.10345 17.8225C6.19233 20.887 5.02972 24.3584 4.70976 27.9558L14.5678 28.8326C14.7501 26.7832 15.4124 24.8055 16.5012 23.0597C17.5899 21.3139 19.0745 19.849 20.8347 18.7836C22.5949 17.7183 24.5813 17.0824 26.6329 16.9275C28.6846 16.7726 30.7439 17.1031 32.6441 17.8921C34.5443 18.6811 36.232 19.9065 37.5705 21.4691C38.909 23.0317 39.8608 24.8875 40.3487 26.8863C40.8366 28.8851 40.8469 30.9707 40.3788 32.9743C39.9108 34.9778 38.9774 36.843 37.6545 38.4188L45.2341 44.7825Z"
+              fill="#EBEBFF" />
+          </svg>
+          <svg class="round" width="39" height="21" viewBox="0 0 39 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.15526 -7.03308e-05C1.82088 4.88119 3.43927 9.69535 6.65441 13.3834C9.86953 17.0714 14.418 19.3311 19.2993 19.6655C24.1806 19.9999 28.9947 18.3815 32.6827 15.1664C36.3707 11.9512 38.6305 7.40273 38.9649 2.52147L2.15526 -7.03308e-05Z"
+              fill="#6070FF" />
+          </svg>
+        </div>
+      </div>
+      <header class="header">
+        <main>
+          <h1 class="header-title">
+            <span class="full">I'm Gordon</span>
+            <span class="the">A</span><span class="professional">Professional</span>Full-stack Web Developer
+          </h1>
+          <p class="header-body">
+            <span>
+              I'm a certified Full-stack Web Developer who <span class="blue">enjoys building</span> interactive interfaces with
+              Javascript, Ruby, Ruby on Rails, and React.
+            </span>
+            <span>
+              I’m also a Technical Support Engineer, a mentor at Microverse, and a freelance full-stack
+              developer building solutions for medium-sized businesses using <span class="blue">ReactJS.</span>.
+            </span>
+            <span>
+              I'm open to front-end remote opportunities with
+              digital-product teams. I also possess<span class="blue">a degree in Software Engineering.</span>
+            </span>
+            <span>
+              I'm also enhancing my skills through learning other technologies like <span class="blue">Typescript and Node.js.</span>
+            </span>
+          </p>
+        </main>
+        <aside>
+          <a href="#portfolio" class="item-btn view">
+            View my projects
+          </a>
+          <p class="uppercase--blue">Let's connect</p>
+          <ul class="social-links">
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sarah_chamorro">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/uryelah/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://medium.com/@sarahchamorro/level-up-your-css-game-today-making-a-game-with-no-javascript-d21fea6756e6">
+                <i class="fab fa-medium-m"></i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/uryelah">
+                <i class="fab fa-github-alt"></i>
+              </a>
+            </li>
+            <li class="social-link">
+              <a target="_blank" rel="noopener noreferrer" href="https://angel.co/u/sarah-chamorro">
+                <i class="fab fa-angellist"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </header>
+    </section>
+    <section id="portfolio" class="section section--vertical section--transparent">
+      <h2 class="item-title section-title">My Projects</h2>
+      <article id="project-1" data-item="aoKanji" class="item">
+        <figure data-item="aoKanji" class="item-img item-img--center">
+          <img data-item="aoKanji" src="./imgs/aokanji.gif" />
+        </figure>
+        <div data-item="aoKanji" class="item-desc">
+          <h2 data-item="aoKanji" class="item-title">Ao Kanji</h2>
+          <ul data-item="aoKanji" class="item-subtitle">
+            <li data-item="aoKanji">Microverse</li>
+            <li data-item="aoKanji">2020</li>
+          </ul>
+          <p data-item="aoKanji" class="item-description">
+            A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to
+            select groups of Kanji by grade or work book lists and access their readings, stroke order, and
+            pronunciation.
+          </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="aoKanji" class="item-tags">
+            <li data-item="aoKanji" class="tag">React</li>
+            <li data-item="aoKanji" class="tag">Redux</li>
+            <li data-item="aoKanji" class="tag">Webpack</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://uryelah.github.io/ao-kanji/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/ao-kanji">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="aoKanji">
+              <span data-item="aoKanji">Read more</span>
+              <i data-item="aoKanji" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-2" data-item="circle" class="item">
+        <figure data-item="circle" class="item-img">
+          <img data-item="circle" src="./imgs/02.jpg" />
+        </figure>
+        <div data-item="circle" class="item-desc">
+          <h2 data-item="circle" class="item-title">Circle</h2>
+          <ul data-item="circle" class="item-subtitle">
+            <li data-item="circle">Microverse</li>
+            <li data-item="circle">2020</li>
+          </ul>
+          <p data-item="circle" class="item-description">
+            A mobile-first SPA Rails and React web-app for remote meetups that let users create, favorite, and browse a
+            catalog of meetings and groups. The API was built with Rails and the client with React and Redux. </p>
+          
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="circle" class="item-tags">
+            <li data-item="circle" class="tag">Rails</li>
+            <li data-item="circle" class="tag">React</li>
+            <li data-item="circle" class="tag">Redux</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://hosting-test-29639.firebaseapp.com/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/rails-react-capstone-project">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="circle">
+              <span data-item="circle">Read more</span>
+              <i data-item="circle" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-3" data-item="depths" class="item">
+        <figure data-item="depths" class="item-img item-img--center">
+          <img data-item="depths" src="./imgs/03.png" />
+        </figure>
+        <div data-item="depths" class="item-desc">
+          <h2 data-item="depths" class="item-title">From the Depths</h2>
+          <ul data-item="depths" class="item-subtitle">
+            <li data-item="depths">Microverse</li>
+            <li data-item="depths">2020</li>
+          </ul>
+          <p data-item="depths" class="item-description">
+            A Phaser3 game with stored score data with Leaderboard API service and original assets that let users play
+            as a tentacle sea creature and shoot/squeeze divers. </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="depths" class="item-tags">
+            <li data-item="depths" class="tag">Phaser3</li>
+            <li data-item="depths" class="tag">JavaScript</li>
+            <li data-item="depths" class="tag">Webpack</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://depths.web.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/from-the-depths">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="depths">
+              <span data-item="depths">Read more</span>
+              <i data-item="depths" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-4" data-item="eggo" class="item">
+        <figure data-item="eggo" class="item-img">
+          <img data-item="eggo" src="./imgs/eggo.gif" />
+        </figure>
+        <div data-item="eggo" class="item-desc">
+          <h2 data-item="eggo" class="item-title">Lo Eggo</h2>
+          <ul data-item="eggo" class="item-subtitle">
+            <li data-item="eggo">Microverse</li>
+            <li data-item="eggo">2020</li>
+          </ul>
+          <p data-item="eggo" class="item-description">
+            A breakfast restaurant page with client-side which allows users to toggle between the restaurant about page,
+            menu, and contact information.
+          </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="eggo" class="item-tags">
+            <li data-item="eggo" class="tag">JavaScript</li>
+            <li data-item="eggo" class="tag">Webpack</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://uryelah.github.io/Microverse-603-restaurant-page/#">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/Microverse-603-restaurant-page">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="eggo">
+              <span data-item="eggo">Read more</span>
+              <i data-item="eggo" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-5" data-item="tic" class="item">
+        <figure data-item="tic" class="item-img">
+          <img data-item="tic" src="./imgs/05.png" />
+        </figure>
+        <div data-item="tic" class="item-desc">
+          <h2 data-item="tic" class="item-title">Tic-tac-toe</h2>
+          <ul data-item="tic" class="item-subtitle">
+            <li data-item="tic">Ruby</li>
+            <li data-item="tic">2020</li>
+          </ul>
+          <p data-item="tic" class="item-description">
+            A ruby version of the traditional Tic Tac Toe that let's two players have matches via terminal commands.
+          </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="tic" class="item-tags">
+            <li data-item="tic" class="tag">Ruby</li>
+          </ul>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/tic-tac-toe-game">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="tic">
+              <span data-item="tic">Read more</span>
+              <i data-item="tic" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article id="project-6" data-item="flag" class="item">
+        <figure data-item="flag" class="item-img">
+          <img data-item="flag" src="./imgs/06.png" />
+        </figure>
+        <div data-item="flag" class="item-desc">
+          <h2 data-item="flag" class="item-title">Where in the world?</h2>
+          <ul data-item="flag" class="item-subtitle">
+            <li data-item="flag">Microverse</li>
+            <li data-item="flag">2020</li>
+          </ul>
+          <p data-item="flag" class="item-description">
+            A responsive country catalog app with restcountries.eu data, and a togglable dark UI theme. It allows users
+            to search countries by their code, name, and browse countries bordering the currently selected country.
+          </p>
+          <h3 class="blue tags-title">Stack:</h3>
+          <ul data-item="flag" class="item-tags">
+            <li data-item="flag" class="tag">React</li>
+            <li data-item="flag" class="tag">Material UI</li>
+          </ul>
+          <div class="row">
+            <a id="modal-live" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://countries-db.web.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a id="modal-repo" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/country-flags">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="flag">
+              <span data-item="flag">Read more</span>
+              <i data-item="flag" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="about" class="section section-about section--round-tr section--shadow-b-light">
+      <article class="about">
+        <div class="about-description">
+          <h2>About Myself</h2>
+          <p>
+            I'm a certified full-stack developer (@Microverse) with a B.A. in Design and experience in UX and Customer
+            Success.
+            Currently continuing my Computer Science education (@Cruziero do Sul Virtual).
+            <br />
+            <br />
+            I have a passion for problem-solving, and a knack for debugging, and love to learn new tools and
+            technologies.
+            <br />
+          </p>
+          <aside>
+            <p class="uppercase--blue">Let's connect</p>
+            <ul class="social-links">
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sarah_chamorro">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/uryelah/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://medium.com/@sarahchamorro/level-up-your-css-game-today-making-a-game-with-no-javascript-d21fea6756e6">
+                  <i class="fab fa-medium-m"></i>
+                </a>
+              </li>
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/uryelah">
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li class="social-link">
+                <a target="_blank" rel="noopener noreferrer" href="https://angel.co/u/sarah-chamorro">
+                  <i class="fab fa-angellist"></i>
+                </a>
+              </li>
+            </ul>
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://docs.google.com/document/d/1Kw8gHHLybQsuuwY2n4BATHhianJe_OkjNmsrm1lEhis/edit?usp=sharing"
+              class="item-btn">
+              Get My Resume
+            </a>
+          </aside>
+        </div>
+      </article>
+      <div class="about-skills">
+        <input checked="true" type="radio" name="drops" id="null" class="drop" />
+        <input type="radio" name="drops" id="languages" class="drop drop-languages" />
+        <input type="radio" name="drops" id="frameworks" class="drop drop-frameworks" />
+        <input type="radio" name="drops" id="skills" class="drop drop-skills" />
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">My Projects</a></li>
-							<li><a href="generic.html">About Me</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://twitter.com/TinyefuzaG" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.linkedin.com/in/tinyefuza-gordon/" class="icon brands fa-linkedin"><span class="label">LinekedIn</span></a></li>
-							<li><a href="https://github.com/1GORDON" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        <label for="languages" class="about-skill languages">
+          <h3>Languages</h3>
+          <i class="arrow fas fa-chevron-right"></i>
+          <div class="content">
+            <div class="content-item">
+              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
+              <p>JavaScript</p>
+            </div>
+            <div class="content-item">
+              <img src="https://icons-for-free.com/iconfiles/png/512/icon++html+icon-1320194800994962643.png"
+                class="content-icon" />
+              <p>HTML5</p>
+            </div>
+            <div class="content-item">
+              <img
+                src="https://i0.wp.com/www.tutorialwebdesign.com.br/wp-content/uploads/2015/07/css3.jpg?fit=250%2C237"
+                class="content-icon" />
+              <p>CSS3</p>
+            </div>
+            <div class="content-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZc936X7NVC1GjyOg5tvp_8lJYSLNv2pLpNw&usqp=CAU"
+                class="content-icon" />
+              <p>Ruby</p>
+            </div>
+          </div>
+        </label>
+        <label for="frameworks" class="about-skill frameworks">
+          <h3>Frameworks</h3>
+          <i class="arrow fas fa-chevron-right"></i>
+          <div class="content">
+            <div class="content-item">
+              <img src="https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png" class="content-icon" />
+              <p>React</p>
+            </div>
+            <div class="content-item">
+              <img src="https://p.kindpng.com/picc/s/25-255448_ruby-on-rails-logo-graphic-design-hd-png.png"
+                class="content-icon" />
+              <p>Rails</p>
+            </div>
+            <div class="content-item">
+              <img src="https://firebase.google.com/images/brand-guidelines/logo-logomark.png" class="content-icon" />
+              <p>Firebase</p>
+            </div>
+            <div class="content-item">
+              <img
+                src="https://w7.pngwing.com/pngs/780/57/png-transparent-node-js-javascript-database-mongodb-native-miscellaneous-text-trademark.png"
+                class="content-icon" />
+              <p>NodeJs</p>
+            </div>
+          </div>
+        </label>
+        <label for="skills" class="about-skill skills">
+          <h3>Skills</h3>
+          <i class="arrow fas fa-chevron-right"></i>
+          <div class="content">
+            <div class="content-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQi5Xoq9eSa90UxHOOk1Y2xuzRPJ8BeX8CPRg&usqp=CAU"
+                class="content-icon" />
+              <p>Git</p>
+            </div>
+            <div class="content-item">
+              <img src="https://webpack.js.org/dcd5e077cf9f54ebe52d4f7ebe8c3080.png" class="content-icon" />
+              <p>Webpack</p>
+            </div>
+            <div class="content-item">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcapC8q1mMPefb3NUdQu7Q4Jhg1xllu5gqkg&usqp=CAU"
+                class="content-icon" />
+              <p>Jest</p>
+            </div>
+            <div class="content-item">
+              <img src="https://rspec.info/images/logo_ogp.png" class="content-icon" />
+              <p>Rspec</p>
+            </div>
+            <div class="content-item">
+              <img src="https://miro.medium.com/max/3840/1*wsG43wOOFexWg_xa0CEhuQ.jpeg" class="content-icon" />
+              <p>PostgreSQL</p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </section>
+    <section id="contact" class="section section-contact section--blue section--round-tl">
+      <h2>Contact me</h2>
+      <p>If you have an application you are interested in developing, a feature that you need built or a project that
+        needs coding. I'd love to help with it.</p>
+      <form action="https://formspree.io/xayprjkg" method="POST">
+        <input required placeholder="name" type="text" name="name">
+        <input required placeholder="email" type="email" name="_replyto">
+        <textarea required placeholder="Write your message here" name="message">
+        </textarea>
+        <input class="item-btn" type="submit" value="Get in Touch">
+      </form>
+      <div class="bg-animated">
+        <div class="roundd"></div>
+        <div class="roundd"></div>
+        <div class="element-4">
+          <svg class="straight" width="160" height="91" viewBox="0 0 160 91" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="11.4399" width="161.407" height="28.875" transform="rotate(23.34 11.4399 0)" fill="#7F8CFF" />
+          </svg>
+          <svg class="round" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="23.5" cy="23.5" r="23.5" fill="#FFF" />
+          </svg>
+        </div>
+        <div class="element-6">
+          <svg class="straight" width="109" height="65" viewBox="0 0 109 65" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.592773" y="42.2793" width="107.204" height="24.699" transform="rotate(-23.1765 0.592773 42.2793)"
+              fill="#7F8CFF" />
+          </svg>
+          <svg class="round" width="121" height="123" viewBox="0 0 121 123" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M120.696 32.8419C115.725 24.0178 108.746 16.4883 100.324 10.8631C91.9013 5.23791 82.2727 1.67518 72.2174 0.463359C62.1621 -0.748462 51.9628 0.424689 42.4452 3.88782C32.9276 7.35096 24.3594 13.0067 17.4342 20.3972C10.509 27.7877 5.42148 36.7051 2.58365 46.4275C-0.254168 56.1498 -0.762569 66.4038 1.09962 76.3592C2.9618 86.3146 7.14223 95.6916 13.3024 103.731C19.4626 111.77 27.4294 118.246 36.5577 122.633L48.5813 97.6185C43.3809 95.1189 38.8422 91.4297 35.3328 86.8498C31.8233 82.2698 29.4418 76.9278 28.3809 71.2562C27.32 65.5846 27.6096 59.7429 29.2263 54.2041C30.843 48.6653 33.7414 43.585 37.6866 39.3747C41.6319 35.1643 46.5133 31.9423 51.9354 29.9693C57.3576 27.9964 63.1681 27.328 68.8966 28.0184C74.6251 28.7088 80.1105 30.7385 84.9087 33.9431C89.7068 37.1478 93.6829 41.4373 96.5149 46.4644L120.696 32.8419Z"
+              fill="white" />
+          </svg>
+        </div>
+        <div class="element-7">
+          <svg class="straight" width="55" height="32" viewBox="0 0 55 32" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect y="22.3472" width="55.6001" height="9.94658" transform="rotate(-23.6989 0 22.3472)" fill="white" />
+          </svg>
+          <svg class="round" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.12998 0.682491C-0.0141202 5.70435 -0.0754779 11.3723 1.9594 16.4394C3.99428 21.5065 7.95872 25.5577 12.9806 27.7018C18.0024 29.8459 23.6704 29.9072 28.7375 27.8724C33.8046 25.8375 37.8558 21.873 39.9999 16.8512L2.12998 0.682491Z"
+              fill="#7F8CFF" />
+          </svg>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./index.js"></script>
+</body>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/sja-thedude/book-an-appointment-backend">Book An Appointment App<br /></a></h2>
-									<p>I built this project with a team of four for the Final Capstone Project while at Microverse. It is based on an app to book an appointment with a doctor. We followed the given design of the website, but we personalized the content. This project uses two apps, one is a backend which is a rails APi and a React frontend.</p>
-								</header>
-								<a href="https://github.com/sja-thedude/book-an-appointment-backend" class="image main"><img src="images/capstone.PNG" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://frontend-doctor-api1.netlify.app/" class="button large">View Live</a></li>
-								</ul>
-							</article>
-
-						<!-- Posts -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Here are some of my other Projects</h2>
-								</header>
-							</article>
-
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://github.com/1GORDON/Manage-budget">Manage Budget<br /></a></h2>
-									</header>
-									<a href="https://github.com/1GORDON/Manage-budget" class="image fit"><img src="images/budget.PNG" alt="" /></a>
-									<p>This is a Ruby on Rails project. It is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.</p>
-									<ul class="actions special">
-										<li><a href="https://fast-scrubland-47961.herokuapp.com/" class="button">View Live</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/1GORDON/Bookstore">Book Store<br /></a></h2>
-									</header>
-									<a href="https://github.com/1GORDON/Bookstore" class="image fit"><img src="images/bookstore.PNG" alt="" /></a>
-									<p>The Bookstore is an application for displaying a list of books, adding a book, and removing a selected book. I built this application using React and Redux and a remote API to fetch and display books with their corresponding categories.</p>
-									<ul class="actions special">
-										<li><a href="https://bookstore-style.netlify.app/" class="button">View Live</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/1GORDON/Space-Travelers-Hub">SpaceX Travellers' Hub<br /></a></h2>
-									</header>
-									<a href="https://github.com/1GORDON/Space-Travelers-Hub" class="image fit"><img src="images/space.PNG" alt="" /></a>
-									<p>The Space Travelers' Hub is a React app where we used, components, hooks, state, redux, and run tests. It consists of Rockets, Missions, and the My Profile section. The Rockets section displays a list of all available SpaceX rockets. The Missions section displays a list of current missions along with their brief description and participation status. The Dragons section displays a list of all available SpaceX dragons. The My Profile section displays all reserved rockets and space missions.</p>
-									<ul class="actions special">
-										<li><a href="https://sjathedude-spacetravellershub.netlify.app/" class="button">View Live</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/1GORDON/Math-Magicians">Math Magicians<br /></a></h2>
-									</header>
-									<a href="https://github.com/1GORDON/Math-Magicians" class="image fit"><img src="images/math.PNG" alt="" /></a>
-									<p>In this project, I built an Application that performs Mathematical computations, displays a home page, and also displays a quote from a remote API. This was built using Javascript, React Router, and API. It displays SPA.</p>
-									<ul class="actions special">
-										<li><a href="https://math-magicians-gordon.netlify.app/" class="button">View Live</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/1GORDON/To-Do-List">ToDo List<br /></a></h2>
-									</header>
-									<a href="https://github.com/1GORDON/To-Do-List" class="image fit"><img src="images/todo.PNG" alt="" /></a>
-									<p>This project will use Web-pack to bundle JavaScript functionality. The user will also be able to mark task completion by selecting the corresponding checkbox, I also added the create, add, and delete methods. The updated tasks list will be stored in local storage.</p>
-									<ul class="actions special">
-										<li><a href="https://1gordon.github.io/To-Do-List/dist/" class="button">View Live</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/1GORDON/Capstone-Module1">Summer Concert Series<br /></a></h2>
-									</header>
-									<a href="https://github.com/1GORDON/Capstone-Module1" class="image fit"><img src="images/capstone1.PNG" alt="" /></a>
-									<p>This is my Capstone Project for Module 1 at Microverse where I was required to build a website that provided information about the upcoming conference. I built this using HTML, CSS, and JavaScript.</p>
-									<ul class="actions special">
-										<li><a href="https://capstone-module1.netlify.app/" class="button">View Live</a></li>
-									</ul>
-								</article>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Kiwatule, Najjera Road<br />
-								Kampala, Uganda</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+256) 703-677054</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">gordon.tinyefuza1@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://twitter.com/TinyefuzaG" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.linkedin.com/in/tinyefuza-gordon/" class="icon brands fa-linkedin"><span class="label">LinekedIn</span></a></li>
-									<li><a href="https://github.com/1GORDON" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
