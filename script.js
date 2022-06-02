@@ -47,7 +47,7 @@ window.addEventListener('resize', () => {
 // Project Card Data
 const data = [
   {
-    project_img: './images/Gordon.png',
+    project_img: './images/gordon.png',
     project_title: 'Book an Appointment',
     project_info_title: 'Microverse',
     counter_image: './images/Counter.svg',
@@ -58,7 +58,7 @@ const data = [
     source_code: 'https://github.com/sja-thedude/book-an-appointment-backend',
   },
   {
-    project_img: './images/Budget.png',
+    project_img: './images/budget.png',
     project_title: 'Manage Budget',
     project_info_title: 'Microverse',
     counter_image: './images/Counter.svg',
@@ -69,7 +69,7 @@ const data = [
     source_code: 'https://github.com/1GORDON/Manage-budget',
   },
   {
-    project_img: './images/Bookstore.png',
+    project_img: './images/bookstore.png',
     project_title: 'Bookstore',
     project_info_title: 'Microverse',
     counter_image: './images/Counter.svg',
@@ -80,7 +80,7 @@ const data = [
     source_code: 'https://github.com/1GORDON/Bookstore',
   },
   {
-    project_img: './images/Space.png',
+    project_img: './images/space.png',
     project_title: 'Spacex Traveler\'s Hub',
     project_info_title: 'Microverse',
     counter_image: './images/Counter.svg',
@@ -91,7 +91,7 @@ const data = [
     source_code: 'https://github.com/sja-thedude/Space-Travelers-Hub',
   },
   {
-    project_img: './images/Math.png',
+    project_img: './images/math.png',
     project_title: 'Math Magicians',
     project_info_title: 'Microverse',
     counter_image: './images/Counter.svg',
@@ -102,7 +102,7 @@ const data = [
     source_code: 'https://github.com/1GORDON/Math-Magicians',
   },
   {
-    project_img: './images/Awesome.png',
+    project_img: './images/awesome.png',
     project_title: 'Awesome Books',
     project_info_title: 'Microverse',
     counter_image: './images/Counter.svg',
@@ -113,7 +113,7 @@ const data = [
     source_code: 'https://github.com/1GORDON/Awesome-books',
   },
   {
-    project_img: './images/Capstone1.png',
+    project_img: './images/capstone1.png',
     project_title: 'Summer Concert Series',
     project_info_title: 'Microverse',
     counter_image: './images/Counter.svg',
